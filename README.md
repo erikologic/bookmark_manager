@@ -3,8 +3,7 @@
 Bookmark manager project.
 
 
-User Stories
------
+## User Stories
 ```
 As an internet user
 So that I can visit websites again
@@ -23,8 +22,9 @@ So that I can find a specific link
 I want to be able to search by tag
 ```
 
-Domain Model
------
+## Domain Model
+
+```
 ________________          ________________
 | WEBSITES/URLs | Add    |   LIST         |
 |_______________| -----> |________________|
@@ -34,3 +34,4 @@ ________________          ________________
                           ________________     Search     
                           |   TAGS        | <------------
                           |_______________|
+```
