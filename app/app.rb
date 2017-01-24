@@ -4,8 +4,6 @@ require_relative 'data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
 
-  set :environment, :development
-
   get '/links' do
     @links = Link.all
     erb :'links/index'
@@ -18,12 +16,10 @@ class BookmarkManager < Sinatra::Base
   post '/links' do
     link = Link.new(url: params[:url], title: params[:title])
     tag = Tag.first_or_create(name: params[:tag])
-    p params
     link.tags << tag
     link.save
-    p link
-    redirect '/links'
+    redirect to('/links')
   end
 
-  run! if app_file == $0
+  #run! if app_file == $0
 end
