@@ -1,8 +1,11 @@
+ENV["RACK_ENV"] ||= "development"
 require 'sinatra/base'
 #require 'rack/showexceptions'
 require './app/models/link'
 
 class BookmarkManager < Sinatra::Base
+
+  set :environment, :development
 
   get '/links' do
     @links = Link.all
