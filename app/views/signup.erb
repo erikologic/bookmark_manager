@@ -6,17 +6,13 @@
   <link rel="stylesheet" type="text/css" href="<%= url('/main.css') %>">
 </head>
 <body>
-<div id='main'>
-<h1> Welcome, <%= current_user.email %>!</h1>
-
-<ul id='links'>
-  <% @links.each do |link| %>
-    <li>
-      <span class="fname">Title: </span><span class="fvalue"><%= link.title %></span> &nbsp;&nbsp;
-      <span class="fname">URL: </span><span class="fvalue"><%= link.url   %></span>
-    </li>
-  <% end %>
-</ul>
+<div id="main">
+<h1> User signup </h1>
+<form action='/register' method='POST' >
+  Email:   <input type="text" name="email" /><br /><br />
+  Password:   <input type="text" name="password" /><br /><br />
+  <input type="submit" value="Sign up" />
+</form>
 </div>
 </body>
 </html>
