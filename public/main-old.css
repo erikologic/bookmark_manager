@@ -1,0 +1,57 @@
+/*#main {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 500px;
+  height: 500px;
+  border-width: 2px;
+  border-color: black;
+}
+
+ul {
+  list-style: none;
+}*/
+/*li {
+  margin: 10px 0px;
+}*/
+/*span .fname {
+  padding-right: 10px;
+  length: 50px;
+}
+span .fvalue {
+  font-weight: bold;
+  length: 150px;
+}*/
+
+/*
+h1 {
+  font-style: italic;
+}
+#main {
+  margin: 10px auto 0px auto;
+  font-size: 20px;
+  font-family: fantasy;
+  width: 600px;
+  height: auto;
+  border: 10px solid black;
+  padding: 20px;
+}
+input[name=submit] {
+  height:50px;
+  width:100px;
+}
+input[name=player1_choice] {
+  height: 60px;
+  width: 180px;
+  margin: 5px;
+  padding-top: 10px;
+}
+td, th {
+  height: 40px;
+  width: 100px;
+  text-align: left;
+  font-weight: 36px;
+  text-transform: uppercase;
+}
+th {
+  font-weight: bold;
+}*/

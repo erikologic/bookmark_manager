@@ -1,12 +1,22 @@
 <html>
+<head><title>Bookmark Manager</title>
+  <link href="http://assets.makersacademy.com/images/favicons/favicon-16x16.png"
+  rel="icon" sizes="16x16" type="image/png">
+  <link rel="stylesheet" type="text/css" href="<%= url('/normalize.css') %>">
+  <link rel="stylesheet" type="text/css" href="<%= url('/main.css') %>">
+</head>
+<body>
+<div id='main'>
 <h1> Links </h1>
 
-<ul id='links'>
+<ul>
   <% @links.each do |link| %>
     <li>
-      Title: <%= link.title %> &nbsp;&nbsp;
-      URL: <%= link.url   %>
+      <span class="fname">Title: </span><span class="fvalue"><%= link.title %></span> &nbsp;&nbsp;
+      <span class="fname">URL: </span><span class="fvalue"><%= link.url   %></span>
     </li>
   <% end %>
 </ul>
+</div>
+</body>
 </html>

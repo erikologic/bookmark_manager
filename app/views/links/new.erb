@@ -1,12 +1,22 @@
 <html>
+<head><title>Bookmark Manager</title>
+  <link href="http://assets.makersacademy.com/images/favicons/favicon-16x16.png"
+  rel="icon" sizes="16x16" type="image/png">
+  <link rel="stylesheet" type="text/css" href="<%= url('/normalize.css') %>">
+  <link rel="stylesheet" type="text/css" href="<%= url('/main.css') %>">
+</head>
+<body>
+<div id="main">
 <h1> New Link </h1>
 <form action='/links' method='POST' >
   Title:
-  <input type="text" name="title" /><br />
+  <input type="text" name="title" /><br /><br />
   URL:
-  <input type="text" name="url" /><br />
+  <input type="text" name="url" /><br /><br />
   Tag:
-  <input type="text" name="tag" />
+  <input type="text" name="tag" /><br /><br />
   <input type="submit" value="submit" />
 </form>
+</div>
+</body>
 </html>

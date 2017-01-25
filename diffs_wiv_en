@@ -1,0 +1,14 @@
+Gemfile more requires
+config.ru long form of pathname for app.rb
+
+blog and readme - not important
+
+spec/
+link_spec empty file can remove
+tests differ obvs
+spec_helper mine shorter
+
+app/
+data_mapper_setup mine only, can remove
+
+added css to mine
