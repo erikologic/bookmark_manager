@@ -2,6 +2,7 @@ require 'spec_helper'
 
 feature 'filter links by tag' do
   scenario 'find links on a particular topic' do
+    signup
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy', tags: [Tag.first_or_create(name: 'bubbles')])
     Link.create(url: 'http://www.google.com', title: 'Google', tags: [Tag.first_or_create(name: 'bubbles')])
     Link.create(url: 'http://www.cornhub.com', title: 'Cornhub', tags: [Tag.first_or_create(name: 'bubbles')])

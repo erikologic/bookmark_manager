@@ -2,6 +2,7 @@ require 'spec_helper'
 
 feature 'show list of links' do
   scenario 'show list of regularly visited sites' do
+    signup
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
     visit('/links')
     expect(page.status_code).to eq 200

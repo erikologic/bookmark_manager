@@ -2,6 +2,7 @@ require 'spec_helper'
 
 feature 'adding tags to links' do
   scenario 'adding a single tag' do
+    signup
     visit('/links/new')
     fill_in( 'title', with: 'Google')
     fill_in( 'url', with: 'http://www.google.co.uk')
@@ -12,6 +13,7 @@ feature 'adding tags to links' do
   end
 
   scenario 'adding multiple tags' do
+    signup
     visit('/links/new')
     fill_in( 'title', with: 'Google')
     fill_in( 'url', with: 'http://www.google.co.uk')

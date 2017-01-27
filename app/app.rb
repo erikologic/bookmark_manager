@@ -9,7 +9,7 @@ class BookmarkManager < Sinatra::Base
 
   helpers do
     def current_user
-      User.get(session[:user_id])
+      @current_user ||= User.get(session[:user_id])
     end
   end
 
@@ -22,13 +22,15 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/register' do
-    user = User.new(email: params[:email], password: params[:password])
+    user = User.new(email: params[:email], password: params[:password],
+      password_confirmation: params[:password_confirmation])
     user.save
     session[:user_id] = user.id
     redirect to('/links')
   end
 
   get '/links' do
+    # redirect '/signup' unless current_user
     @links = Link.all
     erb :'links/index'
   end
